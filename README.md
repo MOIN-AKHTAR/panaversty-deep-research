@@ -1,3 +1,9 @@
+### Activate Virtual Environment:-
+
+```
+source .venv/bin/activate
+```
+
 ### Run Project:-
 
 ```
