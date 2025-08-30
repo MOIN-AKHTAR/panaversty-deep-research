@@ -75,7 +75,7 @@ async def run_agent_chain(starting_agent: Agent, input_text: str, context: Resea
             return True, output.final_output
     
     
-    return False, "Agent chain completed"
+    return False, output.final_output
 
 async def call_agent():
     try:
@@ -110,7 +110,7 @@ async def call_agent():
             print("\n" + "="*50)
             query = input("\nEnter your research query (or 'quit' to exit): ").strip()
             
-            if query.lower() == 'quit':
+            if query.lower() in ['quit','exit']:
                 break
                 
             if not query:
@@ -145,7 +145,7 @@ async def call_agent():
         import traceback
         traceback.print_exc()
     finally:
-        print("\nClosing Agent....")
+        print("\nGood Bye see you again ....")
 
 if __name__ == "__main__":
     # Run the main agent
