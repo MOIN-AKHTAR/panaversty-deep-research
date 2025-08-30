@@ -5,10 +5,9 @@ This is my deep research agent project with intelligent requirement gathering
 import os
 import asyncio
 import json
-import re
 from datetime import datetime
 from dataclasses import dataclass, field
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict, Tuple
 from dotenv import load_dotenv, find_dotenv
 from tavily import AsyncTavilyClient
 from pydantic import BaseModel
