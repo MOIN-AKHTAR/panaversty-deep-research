@@ -72,3 +72,7 @@ The Web Search Agent is responsible for conducting searches across the web to ga
 - Perform web searches using advanced search queries.
 - Store the results for citation and reflection.
 - Provides the final report of research.
+
+## FLOW:-
+
+![alt text](image.png)
