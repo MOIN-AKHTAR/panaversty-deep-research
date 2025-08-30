@@ -1,5 +1,7 @@
 import os
 from agents import AsyncOpenAI, OpenAIChatCompletionsModel, set_tracing_disabled, Agent
+from hooks.agent import AgentHooks
+
 
 api_key: str | None = os.getenv("OPENAI_API_KEY")
 
@@ -16,5 +18,6 @@ llm_model: OpenAIChatCompletionsModel = OpenAIChatCompletionsModel(model="gpt-4o
 base_agent = Agent(
     name="BaseAgent", 
     instructions="You are a helpful agent.", 
-    model=llm_model
+    model=llm_model,
+    hooks= AgentHooks()
 )
